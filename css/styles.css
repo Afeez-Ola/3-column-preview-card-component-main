@@ -73,10 +73,10 @@ button {
 
 .template-grid {
     width: 90%;
-    display: grid;
+    /* display: grid; */
     /* margin: auto; */
     margin: 5% auto;
-    grid-template-areas: 'sedans''suvs''luxury';
+    /* grid-template-areas: 'sedans''suvs''luxury'; */
 }
 
 .sedan {
@@ -105,6 +105,12 @@ button {
     margin: auto;
 }
 
+.templates {
+    width: 100%;
+    display: grid;
+    grid-template-areas: 'sedans''suvs''luxury';
+}
+
 .templates:nth-child(1) {
     grid-area: sedans;
 }
@@ -117,16 +123,30 @@ button {
     grid-area: luxury;
 }
 
-.templates {
-    width: 100%;
+@media (min-width: 30rem) {
+    .template-grid {
+        max-width: 70%;
+        /* grid-template-areas: 'sedans suvs luxury'; */
+    }
+    .card {
+        max-width: 50%;
+    }
 }
 
 @media (min-width: 50rem) {
     .template-grid {
-        max-width: 70%;
-        grid-template-areas: 'sedans''suvs''luxury';
+        max-width: 100%;
+        /* grid-template-areas: 'sedans suvs luxury'; */
+    }
+    .templates {
+        grid-template-areas: 'sedans suvs luxury''sedans suvs luxury';
+        gap: 0;
     }
     .card {
-        max-width: 25%;
+        max-width: 100%;
+    }
+    .sedan,
+    .luxury {
+        border-radius: 0;
     }
 }
