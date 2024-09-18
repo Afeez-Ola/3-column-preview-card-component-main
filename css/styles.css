@@ -14,15 +14,25 @@
 .big-shoulders-display {
     font-family: "Big Shoulders Display", sans-serif;
     font-optical-sizing: auto;
+    font-size: 2rem;
     font-style: normal;
     text-transform: uppercase;
+    color: var(--very-light-gray);
+    font-weight: 700;
 }
 
 .lexend-deca {
     font-family: "Lexend Deca", sans-serif;
     font-optical-sizing: auto;
-    /* font-weight: <weight>; */
+    font-weight: 400;
     font-style: normal;
+    color: var(--transparent-white);
+    font-size: var(--font-size);
+}
+
+.props_centering {
+    width: 80%;
+    margin: auto;
 }
 
 * {
@@ -51,11 +61,23 @@ button {
 .template-grid {
     width: 90%;
     display: grid;
-    grid-template-areas: 'sedans' 'suvs' 'luxury';
+    /* margin: auto; */
+    margin: 25% auto;
+    grid-template-areas: 'sedans''suvs''luxury';
 }
 
 .sedan {
     background: var(--bright-orange);
+    margin: auto;
+}
+
+.sedan_props {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 80%;
+    margin: auto;
+    padding: 1rem 0;
 }
 
 .image_width {
@@ -90,7 +112,7 @@ button {
 @media (min-width: 50rem) {
     .template-grid {
         max-width: 70%;
-        margin: 25% auto;
-        grid-template-areas: 'sedans' 'suvs' 'luxury';
+        /* margin: 25% auto; */
+        grid-template-areas: 'sedans''suvs''luxury';
     }
 }
