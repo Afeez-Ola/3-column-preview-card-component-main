@@ -32,7 +32,6 @@
 }
 
 .learn_more {
-    color: var(--bright-orange);
     font-family: "Lexend Deca", sans-serif;
     font-size: var(--font-size);
     text-decoration: none;
@@ -97,6 +96,18 @@ button {
 .luxury {
     background-color: var(--very-dark-cyan);
     border-radius: 0 0 1.2rem 1.2rem;
+}
+
+.sedan_props a {
+    color: var(--bright-orange);
+}
+
+.suv_props a {
+    color: var(--dark-cyan);
+}
+
+.luxury_props a {
+    color: var(--very-dark-cyan);
 }
 
 .templates {
@@ -185,4 +196,9 @@ button {
     .learn_more {
         width: 80%;
     }
+}
+
+
+}
+
 }
