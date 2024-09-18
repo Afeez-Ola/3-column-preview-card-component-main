@@ -88,25 +88,21 @@ button {
 .sedan {
     background: var(--bright-orange);
     border-radius: 1.2rem 1.2rem 0 0;
-    /* margin: auto; */
 }
 
 .suvs {
     background: var(--dark-cyan);
-    /* margin: auto; */
 }
 
 .luxury {
     background-color: var(--very-dark-cyan);
     border-radius: 0 0 1.2rem 1.2rem;
-    /* margin: auto; */
 }
 
 .templates {
     width: 100%;
     display: grid;
     grid-template-areas: 'sedans''suvs''luxury';
-    /* grid-template-areas: 'sedans suv luxury'; */
 }
 
 .templates:nth-child(1) {
@@ -121,7 +117,7 @@ button {
     grid-area: luxury;
 }
 
-@media (min-width: 30rem) {
+@media (min-width: 40rem) {
     .template-grid {
         max-width: 100%;
     }
@@ -129,7 +125,7 @@ button {
         grid-template-areas: 'sedans suvs luxury';
         gap: 0;
         width: 100%;
-        margin: 20% auto;
+        margin: 40% auto;
     }
     .card {
         max-width: 100%;
@@ -137,6 +133,9 @@ button {
     .sedan,
     .luxury {
         border-radius: 0;
+    }
+    .learn_more {
+        width: 80%;
     }
 }
 
@@ -147,8 +146,8 @@ button {
     .templates {
         grid-template-areas: 'sedans suvs luxury';
         gap: 0;
-        width: 60%;
-        margin: 20% auto;
+        width: 70%;
+        margin: 25% auto;
     }
     .card {
         width: 100%;
@@ -157,5 +156,32 @@ button {
     .sedan,
     .luxury {
         border-radius: 0;
+    }
+    .learn_more {
+        width: 80%;
+        /* font-size: var(--font-size); */
+    }
+}
+
+@media (min-width: 70rem) {
+    .template-grid {
+        max-width: 100%;
+    }
+    .templates {
+        grid-template-areas: 'sedans suvs luxury';
+        gap: 0;
+        width: 60%;
+        margin: 25% auto;
+    }
+    .card {
+        width: 100%;
+        margin: 0;
+    }
+    .sedan,
+    .luxury {
+        border-radius: 0;
+    }
+    .learn_more {
+        width: 80%;
     }
 }
