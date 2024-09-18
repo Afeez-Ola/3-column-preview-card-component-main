@@ -146,7 +146,7 @@ button {
     .templates {
         grid-template-areas: 'sedans suvs luxury';
         gap: 0;
-        max-width: 70%;
+        width: 95%;
         margin: 25% auto;
     }
     .card {
@@ -159,19 +159,20 @@ button {
     }
     .learn_more {
         width: 80%;
+        margin: 1rem 0;
         /* font-size: var(--font-size); */
     }
 }
 
-@media (min-width: 70rem) {
+@media (min-width: 80rem) {
     .template-grid {
         max-width: 100%;
     }
     .templates {
         grid-template-areas: 'sedans suvs luxury';
         gap: 0;
-        width: 60%;
-        margin: 25% auto;
+        width: 45%;
+        margin: 15% auto;
     }
     .card {
         width: 100%;
