@@ -66,8 +66,21 @@ button {
     background-color: var(--very-dark-cyan);
 }
 
+.templates:nth-child(1) {
+    grid-area: sedans;
+}
+
+.templates:nth-child(2) {
+    grid-area: suvs;
+}
+
+.templates:nth-child(3) {
+    grid-area: luxury;
+}
+
 @media (min-width: 30rem) {
     .template-grid {
         max-width: 70%;
+        grid-template-areas: 'sedans suvs luxury';
     }
 }
