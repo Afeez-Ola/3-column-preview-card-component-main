@@ -24,3 +24,27 @@
     /* font-weight: <weight>; */
     font-style: normal;
 }
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--transparent-white);
+    /* color: ; */
+    -webkit-font-smoothing: antialiased;
+}
+
+body,
+input,
+button {
+    font-size: 1rem;
+    /* font-family: ; */
+}
+
+button {
+    cursor: pointer;
+}
