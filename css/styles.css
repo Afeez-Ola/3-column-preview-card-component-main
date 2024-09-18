@@ -51,11 +51,16 @@ button {
 .template-grid {
     width: 90%;
     display: grid;
-    grid-template-areas: 'sedans''suvs''luxury';
+    grid-template-areas: 'sedans' 'suvs' 'luxury';
 }
 
 .sedan {
     background: var(--bright-orange);
+}
+
+.image_width {
+    width: 10rem;
+    max-width: 20%;
 }
 
 .suvs {
@@ -78,9 +83,14 @@ button {
     grid-area: luxury;
 }
 
-@media (min-width: 30rem) {
+.templates {
+    width: 100%;
+}
+
+@media (min-width: 50rem) {
     .template-grid {
         max-width: 70%;
-        grid-template-areas: 'sedans suvs luxury';
+        margin: 25% auto;
+        grid-template-areas: 'sedans' 'suvs' 'luxury';
     }
 }
