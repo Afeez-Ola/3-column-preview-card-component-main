@@ -75,7 +75,7 @@ button {
     width: 90%;
     display: grid;
     /* margin: auto; */
-    margin: 25% auto;
+    margin: 5% auto;
     grid-template-areas: 'sedans''suvs''luxury';
 }
 
@@ -85,7 +85,7 @@ button {
     margin: auto;
 }
 
-.sedan_props {
+.div_props {
     display: flex;
     flex-direction: column;
     gap: 2rem;
@@ -124,7 +124,6 @@ button {
 @media (min-width: 50rem) {
     .template-grid {
         max-width: 70%;
-        /* margin: 25% auto; */
         grid-template-areas: 'sedans''suvs''luxury';
     }
 }
