@@ -56,7 +56,6 @@
 
 body {
     background: var(--transparent-white);
-    /* color: ; */
     -webkit-font-smoothing: antialiased;
 }
 
@@ -102,12 +101,27 @@ button {
     color: var(--bright-orange);
 }
 
+.sedan_props a:hover {
+    background-color: var(--bright-orange);
+    border-color: var(--transparent-white);
+}
+
 .suv_props a {
     color: var(--dark-cyan);
 }
 
+.suv_props a:hover {
+    background-color: var(--bright-orange);
+    border-color: var(--transparent-white);
+}
+
 .luxury_props a {
     color: var(--very-dark-cyan);
+}
+
+.luxury_props a:hover {
+    background-color: var(--bright-orange);
+    border-color: var(--transparent-white);
 }
 
 .templates {
