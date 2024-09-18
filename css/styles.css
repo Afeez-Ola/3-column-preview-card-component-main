@@ -8,7 +8,7 @@
     /*(paragraphs)*/
     --very-light-gray: hsl(0, 0%, 95%);
     /*(background, headings, buttons)*/
-    --font-size: 15;
+    --font-size: 15px;
 }
 
 .big-shoulders-display {
@@ -28,7 +28,7 @@
     font-style: normal;
     color: var(--transparent-white);
     font-size: var(--font-size);
-    line-height: 1.7rem;
+    line-height: 1.6rem;
 }
 
 .learn_more {
@@ -41,6 +41,11 @@
     width: 50%;
     border-radius: 2rem;
     text-align: center;
+}
+
+.image_width {
+    width: 10rem;
+    max-width: 20%;
 }
 
 * {
@@ -76,8 +81,8 @@ button {
 
 .sedan {
     background: var(--bright-orange);
-    margin: auto;
     border-radius: 1.2rem 1.2rem 0 0;
+    margin: auto;
 }
 
 .sedan_props {
@@ -89,17 +94,15 @@ button {
     padding: 1rem 0;
 }
 
-.image_width {
-    width: 10rem;
-    max-width: 20%;
-}
-
 .suvs {
     background: var(--dark-cyan);
+    margin: auto;
 }
 
 .luxury {
     background-color: var(--very-dark-cyan);
+    border-radius: 0 0 1.2rem 1.2rem;
+    margin: auto;
 }
 
 .templates:nth-child(1) {
