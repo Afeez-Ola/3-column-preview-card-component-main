@@ -126,4 +126,7 @@ button {
         max-width: 70%;
         grid-template-areas: 'sedans''suvs''luxury';
     }
+    .card {
+        max-width: 25%;
+    }
 }
