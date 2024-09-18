@@ -117,7 +117,7 @@ button {
     grid-area: luxury;
 }
 
-@media (min-width: 40rem) {
+@media (min-width: 30rem) {
     .template-grid {
         max-width: 100%;
     }
@@ -139,14 +139,14 @@ button {
     }
 }
 
-@media (min-width: 50rem) {
+@media (min-width: 40rem) {
     .template-grid {
         max-width: 100%;
     }
     .templates {
         grid-template-areas: 'sedans suvs luxury';
         gap: 0;
-        width: 70%;
+        max-width: 70%;
         margin: 25% auto;
     }
     .card {
