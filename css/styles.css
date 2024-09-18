@@ -14,8 +14,8 @@
 .big-shoulders-display {
     font-family: "Big Shoulders Display", sans-serif;
     font-optical-sizing: auto;
-    /* font-weight: <weight>; */
     font-style: normal;
+    text-transform: uppercase;
 }
 
 .lexend-deca {
@@ -42,9 +42,20 @@ body,
 input,
 button {
     font-size: 1rem;
-    /* font-family: ; */
 }
 
 button {
     cursor: pointer;
+}
+
+.sedan {
+    background: var(--bright-orange);
+}
+
+.suvs {
+    background: var(--dark-cyan);
+}
+
+.luxury {
+    background-color: var(--very-dark-cyan);
 }
