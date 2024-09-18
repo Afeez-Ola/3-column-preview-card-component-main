@@ -103,7 +103,8 @@ button {
 
 .sedan_props a:hover {
     background-color: var(--bright-orange);
-    border-color: var(--transparent-white);
+    border: var(--transparent-white) 2px solid;
+    color: var(--transparent-white);
 }
 
 .suv_props a {
@@ -111,8 +112,9 @@ button {
 }
 
 .suv_props a:hover {
-    background-color: var(--bright-orange);
-    border-color: var(--transparent-white);
+    background-color: var(--dark-cyan);
+    border: var(--transparent-white) 2px solid;
+    color: var(--transparent-white);
 }
 
 .luxury_props a {
@@ -120,8 +122,9 @@ button {
 }
 
 .luxury_props a:hover {
-    background-color: var(--bright-orange);
-    border-color: var(--transparent-white);
+    background-color: var(--very-dark-cyan);
+    border: var(--transparent-white) 2px solid;
+    color: var(--transparent-white);
 }
 
 .templates {
@@ -210,9 +213,4 @@ button {
     .learn_more {
         width: 80%;
     }
-}
-
-
-}
-
 }
