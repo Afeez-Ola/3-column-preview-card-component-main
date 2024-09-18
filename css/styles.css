@@ -48,6 +48,12 @@ button {
     cursor: pointer;
 }
 
+.template-grid {
+    width: 90%;
+    display: grid;
+    grid-template-areas: 'sedans''suvs''luxury';
+}
+
 .sedan {
     background: var(--bright-orange);
 }
@@ -58,4 +64,10 @@ button {
 
 .luxury {
     background-color: var(--very-dark-cyan);
+}
+
+@media (min-width: 30rem) {
+    .template-grid {
+        max-width: 70%;
+    }
 }
